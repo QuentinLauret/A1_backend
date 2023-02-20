@@ -1,0 +1,18 @@
+body{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(236, 117, 123);
+    padding: 5px;
+}
+
+td, th{
+    padding-right: 20px;
+}
+
+h1{
+    color: rgb(27, 157, 217);
+    text-decoration: underline;
+}

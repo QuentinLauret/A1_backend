@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of guitars</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <h1>List of the guitars</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Electric</th>
+                <th>Price</th>
+                
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for guitar in guitars %} <!--Shows the guitar details, for each guitar listed-->
+            <tr>
+                <!-- Shows the elements corresponding to the keys of "models.py"-->
+                <td>{{ guitar.gid }}</td>
+                <td>{{ guitar.name }}</td>
+                <td>{{ guitar.color }}</td>
+                <td>{{ guitar.isElectric }}</td>
+                <td>{{ guitar.price }}</td>
+                
+                <td>
+                     <!--Allows to edit or delete the element with its Id-->
+                    <a href="/update/{{ guitar.id }}">Edit</a>     
+                    <a href="/delete/{{ guitar.id }}">Delete</a>    
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button><a href="/guit">Register a guitar</a></button>
+</body>
+
+</html>

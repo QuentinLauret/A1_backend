@@ -1,0 +1,43 @@
+<!-- Main page of the app-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <h1>Add a guitar</h1>
+    <form method="POST" action="/guit">          <!-- Form to save a new guitar -->
+        {% csrf_token %}
+        <div>
+
+            <!--Choosing the elements corresponding to the keys of models.py-->
+            <div>
+                <p>Guitar Id : </p>  {{ form.gid }}     
+            </div>
+            <div>
+                <p>Guitar Name : </p>  {{ form.name }}  
+            </div>
+            <div>
+                <p>Guitar Color : </p>  {{ form.color }}  
+            </div>
+            <div>
+                <p>Is Electric : </p>  {{ form.isElectric }}  
+            </div>
+            <div>
+                <p>Guitar Price : </p>  {{ form.price }}  
+            </div>
+            <div>
+                <br>
+                <button type = "submit">Add a new Item</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
