@@ -1,6 +1,6 @@
 To do this project, I used two courses :
 https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/7518336-mettez-a-jour-un-objet-modele-avec-un-modelform
-https://discord.com/channels/@me/1067797805965516830/1076570586765078609
+https://www.youtube.com/watch?v=vNegKfkopoQ&start=43
 
 To use the app, you have to go to http://127.0.0.1:8000/guit.
 This link allows you to register a new guitar, with an id, a price, a color, chose if the guitar is an electric one and its price.
