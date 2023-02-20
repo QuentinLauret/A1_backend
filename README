@@ -1,0 +1,12 @@
+To do this project, I used two courses :
+https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/7518336-mettez-a-jour-un-objet-modele-avec-un-modelform
+https://discord.com/channels/@me/1067797805965516830/1076570586765078609
+
+To use the app, you have to go to http://127.0.0.1:8000/guit.
+This link allows you to register a new guitar, with an id, a price, a color, chose if the guitar is an electric one and its price.
+
+You can see the list of all of the guitars on http://127.0.0.1:8000/listing. On this page, it is possible to edit or to delete a guitar.
+
+The main issue in this project, was the understanding of the framework. At the beginning, I did not understand how to change the value of my table. But, thanks to the tutorials, I succeeded.
+
+The extensions that could be added to the project are : some security, with an admin account, the possibility to add photos to the guitars registered.
